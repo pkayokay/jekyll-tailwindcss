@@ -30,6 +30,11 @@ collections:
   posts:
     output: true # ? https://github.com/jekyll/jekyll/issues/5906
     permalink: /:slug # /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-tailwindcss
+
+tailwindcss:
+  config: './tailwind.config.js' # this is the default location
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

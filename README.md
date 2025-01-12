@@ -1,5 +1,3 @@
-
-
 ## Minimal Jekyll Setup
 
 Example repo to use Jekyll in a simpler way, without a theme and default liquid tags.
@@ -10,3 +8,8 @@ Example repo to use Jekyll in a simpler way, without a theme and default liquid 
 - copy/paste from _includes/* and _layouts/* and delete what you don't need
 
 `bundle exec jekyll serve --livereload`
+
+## Cloudflare pages setup
+
+Build commands: `jekyll build` with `/_site` output
+Set environment variables `JEKYLL_ENV=production`
