@@ -11,5 +11,4 @@ Example repo to use Jekyll in a simpler way, without a theme and default liquid 
 
 ## Cloudflare pages setup
 
-Build commands: `jekyll build` with `/_site` output
-Set environment variables `JEKYLL_ENV=production`
+Build commands: `JEKYLL_ENV=production bundle exec jekyll build` with `/_site` output
