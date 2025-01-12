@@ -1,4 +1,7 @@
-body {
-  font-family: sans-serif;
-  padding: 1rem;
-}
+---
+# This yaml frontmatter is required for jekyll to process the file
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
