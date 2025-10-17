@@ -2,10 +2,40 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
+  
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="title" content="{{ page.title | default: site.title }}">
   {%- if page.description -%}
     <meta name="description" content="{{ page.description }}">
   {%- endif -%}
+  {%- if page.keywords -%}
+    <meta name="keywords" content="{{ page.keywords }}">
+  {%- endif -%}
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  {%- if page.description -%}
+    <meta property="og:description" content="{{ page.description }}">
+  {%- endif -%}
+  <meta property="og:image" content="{{ "/assets/site_images/og.png" | absolute_url }}">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ page.url | absolute_url}}">
+  <meta property="twitter:title" content="{{ page.title | default: site.title }}">
+  {%- if page.description -%}
+    <meta property="twitter:description" content="{{ page.description }}">
+  {%- endif -%}
+  <meta property="twitter:image" content="{{ "/assets/site_images/og.png" | absolute_url }}">
+
+  <!-- Favicon, theme -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/site_images/apple-touch-icon.png" | relative_url}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/site_images/favicon-32x32.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/site_images/favicon-16x16.png" | relative_url }}">
+
+
   <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/syntax-highlighting.css" | relative_url }}">
   
