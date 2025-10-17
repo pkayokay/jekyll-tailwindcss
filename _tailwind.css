@@ -1,0 +1,6 @@
+/*
+ * This file is used to define the tailwindcss theme and typography styles.
+ * It is @imported into the assets/css/styles.css file, and its output is included in the build.
+ */
+
+@import "tailwindcss";

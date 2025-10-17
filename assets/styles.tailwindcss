@@ -1,0 +1,6 @@
+---
+# This frontmatter here tells Jekyll to process the file.
+# The gem will the Tailwind CSS file defined in `config.tailwindcss.css_path`
+# which defaults to `_tailwind.css` in the project root folder.
+---
+
