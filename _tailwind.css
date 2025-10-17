@@ -13,6 +13,6 @@
 }
 @layer base {
   body {
-    @apply font-inter p-5;
+    @apply font-inter p-0 m-0;
   }
 }
