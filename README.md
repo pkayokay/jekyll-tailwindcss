@@ -16,14 +16,12 @@ bash start.sh # this runs bundle exec jekyll serve --livereload
 
 ## Deployment
 
+1. Set `/_site` as the output directory
+2. Run build command
+
 ```bash
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-export JEKYLL_ENV=production
-
 bash build.sh
-```
 
-- Set `JEKYLL_ENV=production`
-- Build with `bundle exec jekyll build`
-- Set `/_site` as the output directory
+# or
+JEKYLL_ENV=production bundle exec jekyll build
+```
