@@ -1,4 +1,4 @@
-## Minimal Jekyll Setup
+## Jekyll TailwindCSS Setup
 
 Example repo to use Jekyll in a simpler way, without a theme and default liquid tags, configured with TailwindCSS.
 
@@ -11,7 +11,7 @@ bundle install
 ## Development
 
 ```bash
-bash start.sh # this runs bundle exec jekyll serve --livereload
+bash start.sh
 ```
 
 ## Deployment
@@ -21,7 +21,4 @@ bash start.sh # this runs bundle exec jekyll serve --livereload
 
 ```bash
 bash build.sh
-
-# or
-JEKYLL_ENV=production bundle exec jekyll build
 ```
