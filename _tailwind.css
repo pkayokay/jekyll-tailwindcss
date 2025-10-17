@@ -7,3 +7,12 @@
 @import "tailwindcss/theme.css" layer(theme);
 /*@import "tailwindcss/preflight.css" layer(base); */
 @import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+}
+@layer base {
+  body {
+    @apply font-inter p-5;
+  }
+}
