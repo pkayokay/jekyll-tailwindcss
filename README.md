@@ -1,14 +1,21 @@
 ## Minimal Jekyll Setup
 
-Example repo to use Jekyll in a simpler way, without a theme and default liquid tags.
+Example repo to use Jekyll in a simpler way, without a theme and default liquid tags, configured with TailwindCSS.
 
-- gem install jekyll
-- jekyll new my-site
-- bundle open minima (default theme)
-- copy/paste from _includes/* and _layouts/* and delete what you don't need
+## Installation
 
-`bundle exec jekyll serve --livereload`
+```bash
+bundle install
+```
 
-## Cloudflare pages setup
+## Development
 
-Build commands: `JEKYLL_ENV=production bundle exec jekyll build` with `/_site` output
+```bash
+bash start.sh # this runs bundle exec jekyll serve --livereload
+```
+
+## Deployment
+
+- Set `JEKYLL_ENV=production`
+- Build with `bundle exec jekyll build`
+- Set `/_site` as the output directory
