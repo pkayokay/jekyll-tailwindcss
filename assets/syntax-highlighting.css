@@ -11,13 +11,22 @@
   margin: 0;
 }
 
+.highlight {
+  overflow-x: auto;
+}
+
+.highlight pre {
+  white-space: pre;
+  word-wrap: normal;
+}
+
 code.language-plaintext {
   background-color: #e3e3e3;
   color: black;
   padding: 0.1em 0.3em;
   border-radius: 0.15em;
   font-size: 0.85em;
-  }
+}
 
 .highlight .c { color: #999999; font-style: italic } /* Comment */
 .highlight .err { color: #f2777a } /* Error */
