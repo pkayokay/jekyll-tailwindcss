@@ -2,7 +2,4 @@
 # This yaml frontmatter is required for jekyll to process the file
 ---
 
-@layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-/*@import "tailwindcss/preflight.css" layer(base); */
-@import "tailwindcss/utilities.css" layer(utilities);
+@import "tailwindcss";
