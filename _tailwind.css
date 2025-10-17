@@ -3,16 +3,187 @@
  * It is @imported into the assets/css/styles.css file, and its output is included in the build.
  */
 
-@layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-/*@import "tailwindcss/preflight.css" layer(base); */
-@import "tailwindcss/utilities.css" layer(utilities);
+@import "tailwindcss";
 
 @theme {
   --font-inter: "Inter", sans-serif;
 }
+
 @layer base {
+  /* Base styles optimized for Preflight */
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
-    @apply font-inter p-0 m-0;
+    @apply font-inter leading-relaxed text-gray-900 bg-white antialiased;
+  }
+
+  /* Typography - Preflight removes all default margins/styling */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold leading-tight tracking-tight mb-6 text-gray-900;
+  }
+
+  h1 {
+    @apply text-4xl lg:text-5xl mb-8;
+  }
+
+  h2 {
+    @apply text-3xl lg:text-4xl mb-6;
+  }
+
+  h3 {
+    @apply text-2xl lg:text-3xl mb-5;
+  }
+
+  h4 {
+    @apply text-xl lg:text-2xl mb-4;
+  }
+
+  h5 {
+    @apply text-lg lg:text-xl mb-4;
+  }
+
+  h6 {
+    @apply text-base lg:text-lg mb-4;
+  }
+
+  /* Paragraphs and text content */
+  p {
+    @apply mb-4 text-gray-700 leading-relaxed;
+  }
+
+  /* Strong and emphasis */
+  strong,
+  b {
+    @apply font-semibold text-gray-900;
+  }
+
+  em,
+  i {
+    @apply italic;
+  }
+
+  /* Links - Preflight removes underlines */
+  a {
+    @apply text-blue-600 hover:text-blue-800 transition-colors duration-200 underline decoration-blue-600/30 hover:decoration-blue-800;
+  }
+
+  /* Lists - Preflight removes all list styling */
+  ul,
+  ol {
+    @apply mb-6 pl-6 space-y-2;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li {
+    @apply text-gray-700;
+  }
+
+  /* Nested lists */
+  ul ul,
+  ol ol,
+  ul ol,
+  ol ul {
+    @apply mt-2 mb-0;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    @apply border-l-4 border-blue-200 pl-6 py-2 italic text-gray-600 mb-6 bg-gray-50 rounded-r-lg;
+  }
+
+  blockquote p {
+    @apply mb-0;
+  }
+
+  /* Tables - Preflight removes all table styling */
+  table {
+    @apply w-full border-collapse mb-6 text-sm;
+  }
+
+  th,
+  td {
+    @apply border border-gray-300 px-4 py-3 text-left;
+  }
+
+  th {
+    @apply bg-gray-100 font-semibold text-gray-900;
+  }
+
+  td {
+    @apply text-gray-700;
+  }
+
+  /* Forms - Enhanced with better spacing */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="url"],
+  input[type="search"],
+  textarea,
+  select {
+    @apply w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors;
+  }
+
+  label {
+    @apply block text-sm font-medium text-gray-700 mb-2;
+  }
+
+  button,
+  input[type="submit"],
+  input[type="button"] {
+    @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 cursor-pointer border-0;
+  }
+
+  /* Horizontal rule */
+  hr {
+    @apply border-0 border-t border-gray-200 my-12;
+  }
+
+  /* Images */
+  img {
+    @apply max-w-full h-auto rounded-lg;
+  }
+
+  /* Figure and figcaption */
+  figure {
+    @apply mb-6;
+  }
+
+  figcaption {
+    @apply text-sm text-gray-600 mt-2 text-center italic;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-blue-100 text-blue-900;
+  }
+
+  /* Details and summary */
+  details {
+    @apply mb-4 border border-gray-200 rounded-lg p-4;
+  }
+
+  summary {
+    @apply font-medium cursor-pointer text-gray-900 hover:text-blue-600 transition-colors;
+  }
+
+  /* Small text */
+  small {
+    @apply text-sm text-gray-500;
   }
 }
