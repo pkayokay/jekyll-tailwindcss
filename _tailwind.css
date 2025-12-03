@@ -4,6 +4,7 @@
  */
 
 @import "tailwindcss";
+@import "./assets/syntax-highlighting.css";
 
 @theme {
   --font-inter: "Inter", sans-serif;
