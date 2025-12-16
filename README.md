@@ -5,6 +5,12 @@ Example repo to use Jekyll in a simpler way, without a theme and default liquid 
 ## Installation
 
 ```bash
+gem install bundler jekyll
+```
+
+cd into the repo
+
+```bash
 bundle install
 ```
 
