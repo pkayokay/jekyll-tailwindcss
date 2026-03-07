@@ -27,3 +27,5 @@ group :jekyll_plugins do
   gem "jekyll-tailwindcss", "~> 0.7.0"
 end
 
+# Logger used to be loaded from the standard library, but is not part of the default gems since Ruby 4.0.0.
+gem "logger"
