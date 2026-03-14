@@ -6,6 +6,12 @@
 @import "tailwindcss";
 @import "./syntax-highlighting.css";
 
+@source "../_layouts/**/*.html";
+@source "../_includes/**/*.html";
+@source "../_posts/**/*.{html,md}";
+@source "../_pages/**/*.{html,md}";
+@source "../*.{html,md,markdown}";
+
 @theme {
   --font-sans: "Inter", -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Sans-Serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
