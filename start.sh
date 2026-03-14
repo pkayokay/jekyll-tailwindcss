@@ -2,6 +2,9 @@
 
 PORT=${1:-4000}
 
+echo "Installing JS dependencies..."
+yarn install --frozen-lockfile
+
 echo "Building JS..."
 yarn build:js
 
