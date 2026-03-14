@@ -14,9 +14,9 @@ Jekyll::Hooks.register :site, :post_write do |site|
 
   Jekyll.logger.info "Assets:", "Building CSS..."
   css_flags = minify ? "--minify" : ""
-  system("./node_modules/.bin/tailwindcss -i ./assets/tailwind.css -o #{dest}/assets/styles.css #{css_flags}")
+  system("./node_modules/.bin/tailwindcss -i ./_assets/css/tailwind.css -o #{dest}/assets/styles.css #{css_flags}")
 
   Jekyll.logger.info "Assets:", "Building JS..."
   js_flags = minify ? "--minify" : ""
-  system("./node_modules/.bin/esbuild assets/js/application.js --bundle --outfile=#{dest}/assets/js/website.js --format=esm #{js_flags}")
+  system("./node_modules/.bin/esbuild _assets/js/application.js --bundle --outfile=#{dest}/assets/js/website.js --format=esm #{js_flags}")
 end

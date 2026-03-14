@@ -49,7 +49,6 @@ exclude:
   - package.json
   - yarn.lock
   - node_modules/
-  - assets/tailwind.css
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
