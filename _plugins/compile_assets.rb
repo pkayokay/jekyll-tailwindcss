@@ -1,6 +1,13 @@
 # Runs after Jekyll writes the site to _site on every build.
 # This is what triggers CSS and JS compilation during `jekyll serve`,
 # so Jekyll's built-in livereload picks up the changes automatically.
+#
+# Compilation flow:
+#   _assets/css/tailwind.css  →  tailwindcss  →  _site/assets/styles.css
+#   _assets/js/application.js →  esbuild      →  _site/assets/js/website.js
+#
+# Source files live in _assets/ so Jekyll watches them for changes
+# but does not copy them to _site (the _ prefix prevents that).
 Jekyll::Hooks.register :site, :post_write do |site|
   # Bail early if npm dependencies haven't been installed.
   unless File.exist?("./node_modules/.bin/tailwindcss") && File.exist?("./node_modules/.bin/esbuild")
