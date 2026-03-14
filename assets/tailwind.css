@@ -4,7 +4,7 @@
  */
 
 @import "tailwindcss";
-@import "./assets/syntax-highlighting.css";
+@import "./syntax-highlighting.css";
 
 @theme {
   --font-sans: "Inter", -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Sans-Serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
