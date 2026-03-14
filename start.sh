@@ -2,7 +2,8 @@
 
 PORT=${1:-4000}
 
-echo "Installing JS dependencies..."
+echo "Installing dependencies..."
+bundle install
 yarn install --frozen-lockfile
 
 echo "Starting Jekyll development server with live reload on port $PORT..."
