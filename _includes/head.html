@@ -36,9 +36,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/images/favicon-16x16.png" | relative_url }}">
 
 
-  <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
-
+  {% include css.html %}
   {% include fonts.html %}
-
-  <script src="/assets/js/bundle.js" type="module"></script>
+  {% include js.html %}
 </head>

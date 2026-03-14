@@ -4,4 +4,4 @@ _site
 .jekyll-metadata
 vendor
 /node_modules
-/assets/js/bundle.js
+/assets/js/website.js
