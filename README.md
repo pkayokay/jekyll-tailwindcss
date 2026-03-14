@@ -1,4 +1,4 @@
-## Jekyll TailwindCSS Setup
+## Jekyll TailwindCSS Starter
 
 Example repo to use Jekyll in a simpler way, without a theme and default liquid tags, configured with TailwindCSS.
 
