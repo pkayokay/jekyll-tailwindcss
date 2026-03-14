@@ -49,8 +49,6 @@ exclude:
   - package.json
   - yarn.lock
   - node_modules/
-  - assets/js/application.js
-  - assets/js/controllers/
   - assets/tailwind.css
 #   - .sass-cache/
 #   - .jekyll-cache/
