@@ -7,7 +7,18 @@
 @import "./syntax-highlighting.css";
 
 @theme {
-  --font-sans: "Inter", -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Sans-Serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-sans:
+    "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Helvetica, Arial, Sans-Serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+
+  /* Accent color — change these to restyle links and input focus across the site */
+  --color-accent-100: var(--color-blue-100);
+  --color-accent-300: var(--color-blue-300);
+  --color-accent-400: var(--color-blue-400);
+  --color-accent-500: var(--color-blue-500);
+  --color-accent-600: var(--color-blue-600);
+  --color-accent-800: var(--color-blue-800);
 }
 
 @layer base {
@@ -18,6 +29,38 @@
   body {
     @apply antialiased;
     @apply font-sans;
+    @apply text-neutral-800 bg-white;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply shadow-xs text-sm block w-full rounded-sm border border-neutral-300 bg-white py-2 px-3;
+    @apply placeholder:text-neutral-400/70;
+    @apply disabled:bg-neutral-100 disabled:cursor-not-allowed disabled:text-neutral-500;
+    @apply focus:border-accent-300! focus:outline-none focus:ring-[3px] focus:ring-accent-100;
+  }
+
+  textarea {
+    @apply resize-y min-h-24;
+  }
+
+  select {
+    @apply appearance-none cursor-pointer;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    @apply accent-neutral-900 w-4 h-4 cursor-pointer;
+  }
+
+  label {
+    @apply text-sm font-medium text-neutral-700;
+  }
+
+  button[type="submit"],
+  input[type="submit"] {
+    @apply cursor-pointer;
   }
 }
 
@@ -35,38 +78,38 @@
 
     /* Inline code */
     code:not(pre code) {
-      @apply bg-neutral-100 text-neutral-900 px-1.5 py-0.5 rounded;
-      @apply font-mono text-sm border border-neutral-200;
+      @apply bg-neutral-100 text-red-700 px-1.5 py-0.5 rounded-md;
+      @apply font-mono text-[0.875em] border border-neutral-200/80;
     }
 
     /* Headings */
     h1 {
-      @apply text-3xl font-bold mt-6 mb-5 leading-tight;
+      @apply text-3xl font-bold mt-8 mb-4 leading-tight tracking-tight text-neutral-900;
     }
 
     h2 {
-      @apply text-2xl font-bold mt-5 mb-4 leading-tight;
+      @apply text-2xl font-bold mt-8 mb-3 leading-tight tracking-tight text-neutral-900;
     }
 
     h3 {
-      @apply text-xl font-semibold mt-4 mb-3 leading-snug;
+      @apply text-xl font-semibold mt-6 mb-3 leading-snug text-neutral-900;
     }
 
     h4 {
-      @apply text-lg font-semibold mt-3 mb-3 leading-snug;
+      @apply text-lg font-semibold mt-5 mb-2 leading-snug text-neutral-900;
     }
 
     h5 {
-      @apply text-base font-semibold mt-3 mb-3 leading-normal;
+      @apply text-base font-semibold mt-4 mb-2 leading-normal text-neutral-800;
     }
 
     h6 {
-      @apply text-sm font-semibold mt-2 mb-2 leading-normal text-neutral-700;
+      @apply text-sm font-semibold mt-3 mb-2 leading-normal text-neutral-500 uppercase tracking-wider;
     }
 
     /* Paragraphs */
     p {
-      @apply mb-5 leading-7;
+      @apply mb-5 leading-relaxed text-neutral-700;
       white-space: pre-line;
     }
 
@@ -82,7 +125,7 @@
     /* Lists */
     ul,
     ol {
-      @apply mb-5 pl-6;
+      @apply mb-5 pl-6 text-neutral-700;
     }
 
     ul {
@@ -94,7 +137,7 @@
     }
 
     li {
-      @apply mb-3 leading-7;
+      @apply mb-2 leading-relaxed;
     }
 
     li:last-child {
@@ -106,12 +149,14 @@
     ol ol,
     ul ol,
     ol ul {
-      @apply mt-3 mb-0 ml-4;
+      @apply mt-2 mb-0 ml-4;
     }
 
     /* Links */
     a {
-      @apply text-blue-700 underline hover:text-blue-800;
+      @apply text-accent-600 underline decoration-accent-400 underline-offset-2;
+      @apply hover:text-accent-800 hover:decoration-accent-500;
+      @apply transition-colors duration-150;
     }
 
     /* Underline */
@@ -121,7 +166,9 @@
 
     /* Blockquotes */
     blockquote {
-      @apply border-l-4 font-medium border-neutral-300 pl-4 italic my-5 text-neutral-700;
+      @apply border-l-[3px] border-neutral-300 pl-5 my-6;
+      @apply text-neutral-600 italic;
+      @apply bg-neutral-50 py-3 pr-4 rounded-r;
     }
 
     /* Horizontal rule wrapper */
@@ -131,12 +178,12 @@
 
     /* Horizontal rules */
     hr {
-      @apply border-0 border-t border-neutral-200 mt-7 mb-5 cursor-pointer;
+      @apply border-0 border-t border-neutral-200 mt-8 mb-6;
     }
 
     /* Strong and emphasis */
     strong {
-      @apply font-bold;
+      @apply font-semibold text-neutral-900;
     }
 
     em {
@@ -146,31 +193,54 @@
     /* Strikethrough */
     s,
     del {
-      @apply line-through;
+      @apply line-through text-neutral-400;
     }
 
     /* Hard breaks - line breaks are handled naturally by the editor */
 
     /* Highlight/mark */
     mark {
-      @apply bg-yellow-200 px-0.5 rounded;
+      @apply bg-yellow-100 text-yellow-900 px-0.5 rounded;
     }
 
     /* Tables */
     table {
-      @apply w-full text-sm border-collapse my-5;
+      @apply text-sm border-collapse my-6;
+      display: block;
+      width: max-content;
+      max-width: 100%;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #d4d4d4 transparent;
+    }
+
+    table::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    table::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    table::-webkit-scrollbar-thumb {
+      background-color: #d4d4d4;
+      border-radius: 9999px;
     }
 
     thead {
-      @apply border-b border-neutral-200;
+      @apply border-b-2 border-neutral-200;
     }
 
     th {
-      @apply text-left font-semibold px-3 py-2;
+      @apply text-left font-semibold px-4 py-2.5 text-neutral-700;
     }
 
     td {
-      @apply px-3 py-2 border-b border-neutral-100;
+      @apply px-4 py-2.5 border-b border-neutral-100 text-neutral-700;
+    }
+
+    tbody tr:nth-child(even) {
+      @apply bg-neutral-50/60;
     }
 
     tr:last-child td {
@@ -179,9 +249,9 @@
 
     /* Images */
     img {
-      @apply max-w-full h-auto cursor-pointer;
+      @apply max-w-full h-auto;
       @apply mx-auto transition-shadow duration-200;
-      @apply my-5;
+      @apply my-6 rounded-sm;
     }
 
     img:last-child {
@@ -229,4 +299,3 @@
     }
   }
 }
-

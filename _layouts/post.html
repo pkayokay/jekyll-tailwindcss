@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
-<div class="">
-  <a href="/" class="no-underline!">Home</a> / <span>{{ page.title | escape }}</span>
-</div>
+<nav class="flex items-center gap-1.5 text-sm text-neutral-400 mb-8">
+  <a href="/" class="no-underline! hover:text-neutral-600 transition-colors duration-150">Home</a>
+  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0"><polyline points="9 18 15 12 9 6"/></svg>
+  <span class="text-neutral-500 truncate min-w-0">{{ page.title | escape }}</span>
+</nav>
+
 <article class="mb-16">
 
-  <header>
-    <h1>{{ page.title | escape }}</h1>
-    <p>
-      <time datetime="{{ page.date | date_to_xmlschema }}">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-    </p>
+  <header class="mb-10">
+    <h1 class="text-4xl font-bold tracking-tight text-neutral-900 leading-tight mb-1!">{{ page.title | escape }}</h1>
+    <time datetime="{{ page.date | date_to_xmlschema }}" class="text-sm text-neutral-400">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {{ page.date | date: date_format }}
+    </time>
   </header>
 
   <div>

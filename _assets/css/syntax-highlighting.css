@@ -22,6 +22,23 @@
 
   .highlight {
     overflow-x: auto;
+    max-width: 100%;
+    min-width: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 transparent;
+  }
+
+  .highlight::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .highlight::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .highlight::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+    border-radius: 9999px;
   }
 
   .highlight pre {

@@ -6,7 +6,7 @@ date: 2025-01-12 10:00:00 -0500
 categories: tailwindcss css
 ---
 
-[TailwindCSS](https://tailwindcss.com) is a utility-first CSS framework that lets you build designs directly in your HTML without writing custom CSS.
+[TailwindCSS](https://tailwindcss.com){:target="_blank" rel="noopener noreferrer"} is a utility-first CSS framework that lets you build designs directly in your HTML without writing custom CSS.
 
 ## Why Tailwind?
 
@@ -36,5 +36,5 @@ TailwindCSS v4 is set up using the CLI. The entry stylesheet lives in `assets/cs
 
 ## Further reading
 
-- [TailwindCSS Docs](https://tailwindcss.com/docs)
-- [Utility-First Fundamentals](https://tailwindcss.com/docs/styling-with-utility-classes)
+- [TailwindCSS Docs](https://tailwindcss.com/docs){:target="_blank" rel="noopener noreferrer"}
+- [Utility-First Fundamentals](https://tailwindcss.com/docs/styling-with-utility-classes){:target="_blank" rel="noopener noreferrer"}

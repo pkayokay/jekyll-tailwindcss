@@ -6,7 +6,7 @@ date: 2025-01-13 10:00:00 -0500
 categories: stimulus javascript
 ---
 
-[Stimulus](https://stimulus.hotwired.dev) is a lightweight JavaScript framework designed to enhance server-rendered HTML. Rather than managing state and rendering views client-side, Stimulus connects JavaScript controllers to elements that already exist on the page.
+[Stimulus](https://stimulus.hotwired.dev){:target="_blank" rel="noopener noreferrer"} is a lightweight JavaScript framework designed to enhance server-rendered HTML. Rather than managing state and rendering views client-side, Stimulus connects JavaScript controllers to elements that already exist on the page.
 
 ## Core concepts
 
@@ -53,6 +53,6 @@ Controllers live in `_assets/js/controllers/` and are registered in `_assets/js/
 
 ## Further reading
 
-- [Stimulus Handbook](https://stimulus.hotwired.dev/handbook/introduction)
-- [Reference: Controllers](https://stimulus.hotwired.dev/reference/controllers)
-- [Reference: Actions](https://stimulus.hotwired.dev/reference/actions)
+- [Stimulus Handbook](https://stimulus.hotwired.dev/handbook/introduction){:target="_blank" rel="noopener noreferrer"}
+- [Reference: Controllers](https://stimulus.hotwired.dev/reference/controllers){:target="_blank" rel="noopener noreferrer"}
+- [Reference: Actions](https://stimulus.hotwired.dev/reference/actions){:target="_blank" rel="noopener noreferrer"}
