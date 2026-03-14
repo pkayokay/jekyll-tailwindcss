@@ -7,8 +7,7 @@ export LANGUAGE="en_US.UTF-8"
 echo "Installing dependencies..."
 yarn install --frozen-lockfile
 
-echo "Building CSS and JS..."
-yarn build:css
+echo "Building JS..."
 yarn build:js
 
 echo "Starting Jekyll build..."
