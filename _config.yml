@@ -46,6 +46,9 @@ collections:
 exclude:
   - build.sh
   - start.sh
+  - package.json
+  - yarn.lock
+  - node_modules/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

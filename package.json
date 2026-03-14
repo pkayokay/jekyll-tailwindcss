@@ -1,0 +1,12 @@
+{
+  "name": "jekyll-tailwindcss-starter",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "esbuild": "^0.20.0"
+  }
+}

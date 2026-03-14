@@ -23,9 +23,5 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-group :jekyll_plugins do
-  gem "jekyll-tailwindcss", "~> 0.7.0"
-end
-
 # Logger used to be loaded from the standard library, but is not part of the default gems since Ruby 4.0.0.
 gem "logger"
