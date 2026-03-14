@@ -1,0 +1,10 @@
+- name: Red
+  hex: "#ef4444"
+- name: Green
+  hex: "#22c55e"
+- name: Blue
+  hex: "#3b82f6"
+- name: Yellow
+  hex: "#eab308"
+- name: Purple
+  hex: "#a855f7"
