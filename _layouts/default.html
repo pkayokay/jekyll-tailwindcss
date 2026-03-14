@@ -3,11 +3,11 @@
 
   {%- include head.html -%}
 
-  <body class="prose" data-controller="hello">
+  <body class="prose min-h-screen flex flex-col" data-controller="hello">
 
     {%- include header.html -%}
 
-    <main aria-label="Content" class="pt-10 p-5 max-w-3xl mx-auto">
+    <main aria-label="Content" class="pt-10 p-5 max-w-3xl mx-auto grow">
       <div>
         {{ content }}
       </div>
