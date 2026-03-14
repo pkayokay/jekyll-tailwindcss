@@ -4,12 +4,15 @@
   "type": "module",
   "scripts": {
     "build:js": "esbuild assets/js/application.js --bundle --outfile=assets/js/bundle.js --format=esm",
-    "watch:js": "esbuild assets/js/application.js --bundle --outfile=assets/js/bundle.js --format=esm --watch"
+    "watch:js": "esbuild assets/js/application.js --bundle --outfile=assets/js/bundle.js --format=esm --watch",
+    "build:css": "tailwindcss -i ./_tailwind.css -o ./assets/styles.css",
+    "watch:css": "tailwindcss -i ./_tailwind.css -o ./assets/styles.css --watch"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
     "esbuild": "^0.20.0"
   }
 }

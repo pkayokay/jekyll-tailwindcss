@@ -51,6 +51,7 @@ exclude:
   - node_modules/
   - assets/js/application.js
   - assets/js/controllers/
+  - _tailwind.css
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
