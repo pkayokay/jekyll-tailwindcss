@@ -156,6 +156,27 @@
       @apply bg-yellow-200 px-0.5 rounded;
     }
 
+    /* Tables */
+    table {
+      @apply w-full text-sm border-collapse my-5;
+    }
+
+    thead {
+      @apply border-b border-neutral-200;
+    }
+
+    th {
+      @apply text-left font-semibold px-3 py-2;
+    }
+
+    td {
+      @apply px-3 py-2 border-b border-neutral-100;
+    }
+
+    tr:last-child td {
+      @apply border-b-0;
+    }
+
     /* Images */
     img {
       @apply max-w-full h-auto cursor-pointer;

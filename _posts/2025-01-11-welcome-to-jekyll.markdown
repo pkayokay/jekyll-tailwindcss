@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
-slug: hello-jekyll
+title: "Simple Static Sites with Jekyll"
+slug: simple-static-sites-with-jekyll
 date: 2025-01-11 18:20:27 -0500
 categories: jekyll update
 ---
