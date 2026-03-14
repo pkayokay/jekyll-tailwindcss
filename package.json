@@ -2,12 +2,6 @@
   "name": "jekyll-tailwindcss-starter",
   "private": true,
   "type": "module",
-  "scripts": {
-    "build:js": "esbuild assets/js/application.js --bundle --outfile=assets/js/bundle.js --format=esm",
-    "watch:js": "esbuild assets/js/application.js --bundle --outfile=assets/js/bundle.js --format=esm --watch",
-    "build:css": "tailwindcss -i ./assets/tailwind.css -o ./assets/styles.css",
-    "watch:css": "tailwindcss -i ./assets/tailwind.css -o ./assets/styles.css --watch"
-  },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2"
   },
