@@ -37,7 +37,7 @@ collections:
     permalink: /blog/:slug # /blog/:year/:month/:day/:title/
   pages:
     output: true
-    permalink: /:slug
+    permalink: /:path
 
 # Exclude from processing.
 # The following items will not be processed, by default.
