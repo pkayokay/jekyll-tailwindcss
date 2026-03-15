@@ -10,11 +10,18 @@ layout: default
 <article class="mb-16">
 
   <header class="mb-10">
-    <h1 class="text-4xl font-bold tracking-tight text-neutral-900 leading-tight mb-1!">{{ page.title | escape }}</h1>
-    <time datetime="{{ page.date | date_to_xmlschema }}" class="text-sm text-neutral-400">
+    <time datetime="{{ page.date | date_to_xmlschema }}" class="text-sm text-neutral-400 block mb-1">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {{ page.date | date: date_format }}
     </time>
+    <h1 class="text-4xl font-bold tracking-tight text-neutral-900 leading-tight mt-0!">{{ page.title | escape }}</h1>
+    {%- if page.categories.size > 0 -%}
+    <div class="flex items-center gap-1.5 mt-3">
+      {%- for category in page.categories -%}
+      <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-neutral-100 text-neutral-500">{{ category }}</span>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
   </header>
 
   <div>
