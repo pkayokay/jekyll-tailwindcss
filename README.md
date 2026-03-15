@@ -43,7 +43,7 @@ CSS and JavaScript are compiled automatically by `_plugins/compile_assets.rb`, w
 | Source | Tool | Output |
 |---|---|---|
 | `_assets/css/tailwind.css` | Tailwind CSS | `_site/assets/styles.css` |
-| `_assets/js/application.js` | esbuild | `_site/assets/js/website.js` |
+| `_assets/js/application.js` | esbuild | `_site/assets/js/javascript.js` |
 
 Source files live in `_assets/` so Jekyll watches them for changes but does not copy them verbatim to `_site` — only the compiled output lands there. In production, assets are minified automatically when `JEKYLL_ENV=production` is set.
 

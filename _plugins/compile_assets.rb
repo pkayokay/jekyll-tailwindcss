@@ -4,7 +4,7 @@
 #
 # Compilation flow:
 #   _assets/css/tailwind.css  →  tailwindcss  →  _site/assets/styles.css
-#   _assets/js/application.js →  esbuild      →  _site/assets/js/website.js
+#   _assets/js/application.js →  esbuild      →  _site/assets/js/javascript.js
 #
 # Source files live in _assets/ so Jekyll watches them for changes
 # but does not copy them to _site (the _ prefix prevents that).
@@ -25,5 +25,5 @@ Jekyll::Hooks.register :site, :post_write do |site|
 
   Jekyll.logger.info "Assets:", "Building JS..."
   js_flags = minify ? "--minify" : ""
-  system("./node_modules/.bin/esbuild _assets/js/application.js --bundle --outfile=#{dest}/assets/js/website.js --format=esm #{js_flags}")
+  system("./node_modules/.bin/esbuild _assets/js/application.js --bundle --outfile=#{dest}/assets/js/javascript.js --format=esm #{js_flags}")
 end
