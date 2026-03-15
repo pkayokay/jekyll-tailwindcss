@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Style Without the Struggle: A TailwindCSS Primer"
-slug: getting-started-with-tailwindcss
+slug: tailwindcss-primer
 date: 2025-01-12 10:00:00 -0500
 categories: tailwindcss css
 ---

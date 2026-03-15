@@ -30,15 +30,26 @@ email: your-email@example.com
 description: Example repo with Jekyll, TailwindCSS, and Stimulus JS.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
 collections_dir: content
 collections:
   posts:
-    output: true # ? https://github.com/jekyll/jekyll/issues/5906
-    # This is supposed to disable posts but it does not work
-    permalink: /blog/:slug # /blog/:year/:month/:day/:title/
+    output: true # This doesn't do anything, but setting here for explicitness
+    # See https://github.com/jekyll/jekyll/issues/5906
+    permalink: /blog/:slug
   pages:
     output: true
     permalink: /:path
+
+defaults:
+  - scope:
+      path: "content/_posts"
+    values:
+      layout: post
+  - scope:
+      path: "content/_pages"
+    values:
+      layout: page
 
 # Exclude from processing.
 # The following items will not be processed, by default.
