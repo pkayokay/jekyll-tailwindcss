@@ -34,7 +34,7 @@ collections:
   posts:
     output: true # ? https://github.com/jekyll/jekyll/issues/5906
     # This is supposed to disable posts but it does not work
-    permalink: /:slug # /blog/:year/:month/:day/:title/
+    permalink: /blog/:slug # /blog/:year/:month/:day/:title/
   pages:
     output: true
     permalink: /:slug
