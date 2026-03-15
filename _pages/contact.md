@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Contact"
-description: "Contact"
+title: Contact
+description: Contact description
 ---
 
 <div class="flex flex-col md:flex-row gap-10 md:gap-16">

@@ -27,13 +27,13 @@ bundle install
 Start the local dev server with live reload at `http://localhost:4000`:
 
 ```bash
-bash start.sh
+bash dev.sh
 ```
 
 To use a different port, pass it as an argument:
 
 ```bash
-bash start.sh 4001
+bash dev.sh 4001
 ```
 
 ## Asset Pipeline
