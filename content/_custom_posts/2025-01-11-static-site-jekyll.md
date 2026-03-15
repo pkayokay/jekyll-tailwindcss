@@ -1,11 +1,10 @@
 ---
 title: "Simple Static Sites with Jekyll"
-slug: static-site-jekyll
 date: 2025-01-11 18:20:27 -0500
 categories: jekyll update
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:
 
@@ -28,7 +27,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs]{:target="_blank" rel="noopener noreferrer"} for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]{:target="_blank" rel="noopener noreferrer"}. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk]{:target="_blank" rel="noopener noreferrer"}.
+Check out the [Jekyll docs][jekyll-docs]{:target="_blank" rel="noopener noreferrer"} for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh]{:target="_blank" rel="noopener noreferrer"}. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk]{:target="_blank" rel="noopener noreferrer"}.
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]: https://github.com/jekyll/jekyll

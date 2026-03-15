@@ -1,6 +1,5 @@
 ---
 title: "A Better Way to Work with JavaScript Using Stimulus"
-slug: javascript-using-stimulus
 date: 2025-01-13 10:00:00 -0500
 categories: stimulus javascript
 ---

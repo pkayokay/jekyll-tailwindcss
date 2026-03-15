@@ -33,9 +33,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections_dir: content
 collections:
-  posts:
-    output: true # This doesn't do anything, but setting here for explicitness
-    # See https://github.com/jekyll/jekyll/issues/5906
+  custom_posts: # use "custom_posts" instead of posts to avoid Jekyll's default posts and prevent conflicts
+    output: true
     permalink: /blog/:slug
   pages:
     output: true
@@ -43,14 +42,13 @@ collections:
 
 defaults:
   - scope:
-      path: "content/_posts"
-    values:
-      layout: post
-  - scope:
       path: "content/_pages"
     values:
       layout: page
-
+  - scope:
+      path: "content/_custom_posts"
+    values:
+      layout: custom_post
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

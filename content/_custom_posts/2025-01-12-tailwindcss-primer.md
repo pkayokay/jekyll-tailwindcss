@@ -1,6 +1,5 @@
 ---
 title: "Style Without the Struggle: A TailwindCSS Primer"
-slug: tailwindcss-primer
 date: 2025-01-12 10:00:00 -0500
 categories: tailwindcss css
 ---
