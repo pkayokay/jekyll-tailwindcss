@@ -5,7 +5,7 @@ export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 
 echo "Installing dependencies..."
-yarn install --frozen-lockfile
+yarn install
 
 echo "Starting Jekyll build..."
 bundle exec jekyll build
